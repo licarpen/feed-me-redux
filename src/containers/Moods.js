@@ -41,6 +41,7 @@ export default class Moods extends Component {
         this.setState(state => ({ studies: state.studies + 1 }));
         break;
       default:
+        // eslint-disable-next-line no-console
         console.log(`unhandled type: ${action.type}`);
     }
   }
